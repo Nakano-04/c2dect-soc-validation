@@ -1,4 +1,4 @@
-# Ejecutable Zig — `tt_calc_zig`
+# Ejecutable Zig - `tt_calc_zig`
 
 Calculadora TTD/TTC escrita en Zig 0.17.1. Lee dos JSONL y emite un JSON con
 ejecuciones, detectadas, contenidas, recall, precisión y tiempos medios.

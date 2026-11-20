@@ -1,4 +1,4 @@
-# Plan 4 — Validación de SOC con grupo de control
+# Plan 4 - Validación de SOC con grupo de control
 
 **Solo información y resultados.** Sin código fuente.
 
@@ -23,7 +23,7 @@ ambos brazos. Estado actual: **pendiente de ejecución real en laboratorio**.
 
 ## Prototipo verificable
 
-`tt_calculator.py` — calcula TTD/TTC, recall, precisión, FP/hora e IC95% por
+`tt_calculator.py` - calcula TTD/TTC, recall, precisión, FP/hora e IC95% por
 bootstrap; compara dos brazos (control vs. tratamiento) por técnica y genera un
 informe Markdown. Sin dependencias externas.
 
