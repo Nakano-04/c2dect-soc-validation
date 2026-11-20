@@ -36,6 +36,13 @@ python tt_calculator.py compare --control fixtures/control.json --treatment fixt
 Datos: `fixtures/*.jsonl` sintéticos. Resultado medido en `results.json`, con
 los SHA256 de las fixtures. CI (GitHub Actions) ejecuta los tests en cada push.
 
+## Dimensión ofensiva
+
+La medición se hace desde el adversario: cada técnica emulada se ejecuta con
+marca de tiempo y se observa cuándo la ve el SOC. El brazo de tratamiento usa
+C2-DECT para cerrar brechas; el resultado se comparación contra el control.
+Las hipótesis y el protocolo están en `c2dect-investigacion/OFENSIVA/`.
+
 ## Ámbito
 
 Laboratorio aislado, alcance declarado y RoE firmada. Uso exclusivamente
