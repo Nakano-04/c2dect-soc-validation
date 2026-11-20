@@ -1,0 +1,4 @@
+{"session": "s1", "technique": "T1059", "t": 3.0, "true_positive": true, "contained_t": null}
+{"session": "s3", "technique": "T1021", "t": 25.0, "true_positive": true, "contained_t": 28.0}
+{"session": "s4", "technique": "T1071", "t": 31.0, "true_positive": true, "contained_t": 33.0}
+{"session": "sX", "technique": "T1059", "t": 99.0, "true_positive": false, "contained_t": null}

@@ -21,6 +21,21 @@ SOC frente a un grupo que no lo usa, con control de falsos positivos.
 Requiere el dataset etiquetado del Plan 7 y un SOC con telemetría equivalente en
 ambos brazos. Estado actual: **pendiente de ejecución real en laboratorio**.
 
+## Prototipo verificable
+
+`tt_calculator.py` — calcula TTD/TTC, recall, precisión, FP/hora e IC95% por
+bootstrap; compara dos brazos (control vs. tratamiento) por técnica y genera un
+informe Markdown. Sin dependencias externas.
+
+```powershell
+python -m unittest discover -v
+python tt_calculator.py compute --executions fixtures/executions.jsonl --alerts fixtures/alerts.jsonl --benign-hours 4 --markdown
+python tt_calculator.py compare --control fixtures/control.json --treatment fixtures/treatment.json
+```
+
+Datos: `fixtures/*.jsonl` sintéticos. Resultado medido en `results.json`, con
+los SHA256 de las fixtures. CI (GitHub Actions) ejecuta los tests en cada push.
+
 ## Ámbito
 
 Laboratorio aislado, alcance declarado y RoE firmada. Uso exclusivamente

@@ -1,0 +1,4 @@
+{"session": "s1", "technique": "T1059", "t": 0.0}
+{"session": "s2", "technique": "T1059", "t": 10.0}
+{"session": "s3", "technique": "T1021", "t": 20.0}
+{"session": "s4", "technique": "T1071", "t": 30.0}

@@ -1,0 +1,78 @@
+{
+  "metrics": {
+    "executions": 4,
+    "detected": 3,
+    "contained": 2,
+    "recall": 0.75,
+    "precision": 0.75,
+    "fp_per_hour": 0.25,
+    "ttd": {
+      "mean": 3.0,
+      "ci95": [
+        1.0,
+        5.0
+      ],
+      "n": 3
+    },
+    "ttc": {
+      "mean": 5.5,
+      "ci95": [
+        3.0,
+        8.0
+      ],
+      "n": 2
+    },
+    "by_technique": {
+      "T1021": {
+        "executed": 1,
+        "detected": 1,
+        "contained": 1,
+        "mean_ttd": 5.0
+      },
+      "T1059": {
+        "executed": 2,
+        "detected": 1,
+        "contained": 0,
+        "mean_ttd": 3.0
+      },
+      "T1071": {
+        "executed": 1,
+        "detected": 1,
+        "contained": 1,
+        "mean_ttd": 1.0
+      }
+    }
+  },
+  "comparison": {
+    "paired_techniques": 2,
+    "rows": [
+      {
+        "technique": "T1021",
+        "control": 12.0,
+        "treatment": 8.0,
+        "delta": -4.0
+      },
+      {
+        "technique": "T1059",
+        "control": 10.0,
+        "treatment": 6.0,
+        "delta": -4.0
+      }
+    ],
+    "mean_delta_ttd": {
+      "mean": -4.0,
+      "ci95": [
+        -4.0,
+        -4.0
+      ],
+      "n": 2
+    },
+    "verdict": "mejora-significativa"
+  },
+  "fixture_sha256": {
+    "fixtures/executions.jsonl": "0deb9ae0e7cdf720fdd79ae2b8fdd13919b2955de73bd0fd6c1ad4c88532791c",
+    "fixtures/alerts.jsonl": "e85b06691ae350f1e46b24fd7d9552dba0de77ebf883cf881aa29ffc486f9dab",
+    "fixtures/control.json": "01514aee9f4b12bc2ba2a432de5487fe27f853a3b8a5cf2f34fb88a246d9624b",
+    "fixtures/treatment.json": "e940c555dfb2b69c00d80476ed27b956a04e1cf373d1f0392e8ab007ff2a645c"
+  }
+}

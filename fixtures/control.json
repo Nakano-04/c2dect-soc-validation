@@ -1,0 +1,6 @@
+{
+  "by_technique": {
+    "T1059": {"executed": 4, "detected": 4, "contained": 3, "mean_ttd": 10.0},
+    "T1021": {"executed": 3, "detected": 3, "contained": 2, "mean_ttd": 12.0}
+  }
+}
